@@ -60,8 +60,7 @@ namespace ApiGateway.Mobile.Module.Swagger
         /// <returns></returns>
         public static IApplicationBuilder UseSwagger(this IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsProduction()) return app;
-            if (env.IsDevelopment()) app.UseDeveloperExceptionPage();
+            app.UseDeveloperExceptionPage();
             app.UseSwagger();
             app.UseSwaggerUI(options =>
             {
