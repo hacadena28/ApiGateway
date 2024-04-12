@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ApiGateway.Api</name>
+    </assembly>
+    <members>
+        <member name="T:ApiGateway.Mobile.Module.Cors.CorsExtensions">
+            <summary>
+            Extension de los cors
+            </summary>
+        </member>
+        <member name="M:ApiGateway.Mobile.Module.Cors.CorsExtensions.AddCorsPolicy(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Agregar Cors al program
+            </summary>
+            <param name="services"></param>
+            <param name="config"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiGateway.Mobile.Module.Cors.CorsExtensions.UseCorsPolicy(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Use Cors en el program
+            </summary>
+            <param name="app"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ApiGateway.Mobile.Module.Cors.CorsSettings">
+            <summary>
+            Cors Settings
+            </summary>
+        </member>
+        <member name="P:ApiGateway.Mobile.Module.Cors.CorsSettings.Origins">
+            <summary>
+            lista de origenes
+            </summary>
+        </member>
+        <member name="T:ApiGateway.Mobile.Module.Cors.OriginSettings">
+            <summary>
+            Settings origin
+            </summary>
+        </member>
+        <member name="P:ApiGateway.Mobile.Module.Cors.OriginSettings.Origin">
+            <summary>
+            origin
+            </summary>
+        </member>
+        <member name="P:ApiGateway.Mobile.Module.Cors.OriginSettings.AllowedMethods">
+            <summary>
+            Metodos permitidos 
+            </summary>
+        </member>
+        <member name="P:ApiGateway.Mobile.Module.Cors.OriginSettings.CorsPolicy">
+            <summary>
+            Politicas de cors
+            </summary>
+        </member>
+        <member name="T:ApiGateway.Mobile.Module.Feature.FeatureExtension">
+            <summary>
+            Feature extension
+            </summary>
+        </member>
+        <member name="M:ApiGateway.Mobile.Module.Feature.FeatureExtension.AddFeature(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Agregar freature al program
+            </summary>
+            <param name="services"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiGateway.Mobile.Module.Feature.FeatureExtension.UseFeature(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.Extensions.Configuration.IConfigurationBuilder)">
+            <summary>
+            Usar feature en el program
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+            <param name="configuration"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ApiGateway.Mobile.Module.RateLimiting.RateLimitingExtensions">
+            <summary>
+            RateLimiting Extensions
+            </summary>
+        </member>
+        <member name="M:ApiGateway.Mobile.Module.RateLimiting.RateLimitingExtensions.AddRateLimitingPolicy(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Agregar Rate limiting al program
+            </summary>
+            <param name="services"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiGateway.Mobile.Module.RateLimiting.RateLimitingExtensions.UseRateLimitingPolicy(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Usar Rate Limiting en el program
+            </summary>
+            <param name="app"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ApiGateway.Mobile.Module.Swagger.SwaggerExtension">
+            <summary>
+            Swagger extension
+            </summary>
+        </member>
+        <member name="M:ApiGateway.Mobile.Module.Swagger.SwaggerExtension.AddSwagger(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Agregar swagger
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:ApiGateway.Mobile.Module.Swagger.SwaggerExtension.UseSwagger(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Usar Swagger en el program
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ApiGateway.Mobile.Module.Yarp.SwaggerEndpointEnumerator">
+            <summary>
+            Swagger Endpoint Enumerator
+            </summary>
+        </member>
+        <member name="M:ApiGateway.Mobile.Module.Yarp.SwaggerEndpointEnumerator.GetEnumerator">
+            <summary>
+            Obtener enumerator
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ApiGateway.Mobile.Module.Yarp.YarpExtension">
+            <summary>
+            Yarp extension
+            </summary>
+        </member>
+        <member name="M:ApiGateway.Mobile.Module.Yarp.YarpExtension.AddYarpContiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Agregar yarp en el program
+            </summary>
+            <param name="services"></param>
+            <param name="configuration"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiGateway.Mobile.Module.Yarp.YarpExtension.UseYarp(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Usar yarp en el program
+            </summary>
+            <param name="app"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ApiGateway.Mobile.Startup">
+            <summary>
+            Startup
+            </summary>
+        </member>
+        <member name="M:ApiGateway.Mobile.Startup.AddInfrastructure(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Add infrastructure en el program
+            </summary>
+            <param name="services"></param>
+            <param name="configuration"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiGateway.Mobile.Startup.UseInfrastructure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.Extensions.Configuration.IConfigurationBuilder)">
+            <summary>
+            usar insfrastructure en el program
+            </summary>
+            <param name="builder"></param>
+            <param name="env"></param>
+            <param name="config"></param>
+        </member>
+    </members>
+</doc>
