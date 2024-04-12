@@ -1,12 +1,8 @@
 
 O
 ApiGateway.Api/appsettings.json,e\2\e29efae35f44f3dd78fe092651972bbeda0a687c
-T
-$ApiGateway.Api/appsettings.Demo.json,1\a\1a41dbe2d20418b2548e3b9a09228ea469e28838
 [
 +ApiGateway.Api/appsettings.Development.json,9\3\937e023d603c750e26e7a55e6a7a163c516fdaa1
-W
-'ApiGateway.Api/appsettings.Release.json,3\3\334d046df557be18b4b109301f0bbfb30f2163ac
 I
 ApiGateway.Api/Dockerfile,4\7\479500a63a06dc1af226937251b6e48d74a8f03d
 I
